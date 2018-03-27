@@ -10,6 +10,7 @@ CREATE TABLE bandmembers (
     genre VARCHAR (100) NOT NULL,
     instrument VARCHAR (100) NOT NULL,
     music VARCHAR (100) NOT NULL,
+    profilepicture VARCHAR (100) NOT NULL
     PRIMARY KEY (id)
 );
 
