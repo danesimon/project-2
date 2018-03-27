@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Set Handlebars.
+
 //const exphbs = require("express-handlebars");
 
 //app.engine("handlebars", exphbs({ defaultLayout: "main" }));
@@ -22,6 +23,15 @@ app.use(bodyParser.json());
 
 // Import routes and give the server access to them.
 const routes = require("./controllers/Controller.js");
+
+// const exphbs = require("express-handlebars");
+
+// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+// app.set("view engine", "handlebars");
+
+// Import routes and give the server access to them.
+const routes = require("./controllers/musicController.js");
+
 
 app.use(routes);
 
