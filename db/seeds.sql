@@ -1,2 +1,2 @@
-INSERT INTO bandmembers (name, email, zipcode, genre, instrument, music)
-VALUES ("Bob", "bobrocker2@gmail.com", 27704, "pop", "piano", "soundcloud.com/bobtherocker");
+INSERT INTO bandmembers (name, email, zipcode, genre, instrument, music, profilepicture)
+VALUES ("Bob", "bobrocker2@gmail.com", 27704, "pop", "piano", "soundcloud.com/bobtherocker", "https://goo.gl/images/3WgDq1");
