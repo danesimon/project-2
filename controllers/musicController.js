@@ -6,14 +6,9 @@ const router = express.Router();
 const user = require("../models/user.js");
 
 // Create all our routes and set up logic within those routes where required.
-router.get("/", (req, res) => {
-  user.all(function(data) {
-    const hbsObject = {
-      users: data
-    };
-    console.log(hbsObject);
-    res.render("index", hbsObject);
-  });
+router.get("*", (req, res) => {
+  console.log("hi");
+  res.sendfile(path.join(__dirname, "../view/Grid.html"))
 });
 
 router.post("/api/users", (req, res) => {
@@ -32,16 +27,6 @@ router.put("/api/users/:id", (req, res) => {
 
   console.log("condition", condition);
 
-  // user.update({
-  //   sleepy: req.body.sleepy
-  // }, condition, function(result) {
-  //   if (result.changedRows == 0) {
-  //     // If no rows were changed, then the ID must not exist, so 404
-  //     return res.status(404).end();
-  //   } else {
-  //     res.status(200).end();
-  //   }
-  // });
 });
 
 router.delete("/api/users/:id", (req, res) => {
