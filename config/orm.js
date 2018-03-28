@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> c0304fe365d9e6b7e7c3fa3389c29fa59a5edbeb
 // Import MySQL connection.
 const connection = require("../config/connection.js");
 
@@ -109,7 +105,3 @@ var orm = {
 
 // Export the orm object for the model (cat.js).
 module.exports = orm;
-<<<<<<< HEAD
-=======
-
->>>>>>> c0304fe365d9e6b7e7c3fa3389c29fa59a5edbeb
